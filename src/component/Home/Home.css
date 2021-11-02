@@ -1,0 +1,74 @@
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 21px;
+}
+.wellcome {
+  color: #39e9fe;
+  font-size: 60px;
+  margin-top: 200px;
+  margin: 0 auto;
+  position: absolute;
+}
+.image {
+  width: 90%;
+  height: 420px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.facilities {
+  height: 400px;
+}
+
+.fill-comfort {
+  padding: 50px 20px;
+  background-color: #f8f6f2;
+}
+.comfort {
+  letter-spacing: 50;
+  padding: 30px;
+}
+.fill-comfort-para {
+  font-size: 20px;
+}
+@media only screen and (max-width: 668px) {
+  .home-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .home-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.midtown {
+  color: #39e9fe;
+  font-size: 50px;
+  padding: 50px;
+}
+.warning {
+  color: #ffffff;
+  padding-top: 200px;
+}
+.dinner-div {
+  background-image: url("https://image-tc.galaxy.tf/wijpeg-dinmgj7jxoeoo69lp4evfzzu/file.jpg?width=1920");
+  background-size: 100% 100%;
+}
+.facilities-div {
+  background-image: url("https://image-tc.galaxy.tf/wijpeg-34c7kepj5yugabl16dgkhbllx/file.jpg?height=300");
+  background-size: 100% 100%;
+  color: white;
+}
+.order-list {
+  text-align: left;
+  background-color: red;
+}
+.image-daining {
+  width: 100%;
+  height: 100%;
+}
+.rooms-featured {
+  padding: 100px;
+  font-size: 70px;
+  font-weight: 300;
+}

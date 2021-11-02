@@ -1,0 +1,13 @@
+.add-service form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add-service form input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: lightblue;
+  font-weight: bold;
+}
