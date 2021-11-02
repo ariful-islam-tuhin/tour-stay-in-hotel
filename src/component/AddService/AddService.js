@@ -8,12 +8,14 @@ const AddService = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:1000/services", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("added succesfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://glacial-retreat-12345.herokuapp.com/services", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("added succesfully");
+          reset();
+        }
+      });
   };
 
   return (

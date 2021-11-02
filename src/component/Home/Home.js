@@ -9,7 +9,7 @@ const Home = () => {
   const { isLoading, setIsLoading } = useAuth();
 
   useEffect(() => {
-    fetch("http://localhost:1000/services")
+    fetch("https://glacial-retreat-12345.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => {
         setIsLoading(false);

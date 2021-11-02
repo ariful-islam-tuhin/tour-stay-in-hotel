@@ -5,7 +5,7 @@ import "./ManAllOrder.css";
 const ManAllOrder = () => {
   const [manageeBooking, setManageeBooking] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:1000/manageallorder")
+    fetch("https://glacial-retreat-12345.herokuapp.com/manageallorder")
       .then((res) => res.json())
       .then((data) => setManageeBooking(data));
   }, [manageeBooking]);
@@ -13,7 +13,7 @@ const ManAllOrder = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("are you sure, you want to delete!!!");
     if (proceed) {
-      fetch(`http://localhost:1000/mybooking/${id}`, {
+      fetch(`https://glacial-retreat-12345.herokuapp.com/mybooking/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -33,7 +33,7 @@ const ManAllOrder = () => {
     const updatestatus = manageeBooking.find((update) => update?._id === id);
     updatestatus.status = "approved";
 
-    const uri = `http://localhost:1000/mybooking/${id}`;
+    const uri = `https://glacial-retreat-12345.herokuapp.com/mybooking/${id}`;
     fetch(uri, {
       method: "PUT",
       headers: {

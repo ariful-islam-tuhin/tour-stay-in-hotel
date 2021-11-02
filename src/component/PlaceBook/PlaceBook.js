@@ -19,7 +19,7 @@ const PlaceBook = () => {
   const phoneRef = useRef();
 
   useEffect(() => {
-    const uri = `http://localhost:1000/services/${id}`;
+    const uri = `https://glacial-retreat-12345.herokuapp.com/services/${id}`;
     fetch(uri)
       .then((res) => res.json())
       .then((data) => setBooking(data));
@@ -48,7 +48,7 @@ const PlaceBook = () => {
       phone,
     };
     // console.log(saveBooking);
-    const uri = "http://localhost:1000/placebook";
+    const uri = "https://glacial-retreat-12345.herokuapp.com/placebook";
     fetch(uri, {
       method: "POST",
       headers: {

@@ -7,7 +7,7 @@ const Myorder = () => {
   const { user } = useAuth();
   const [myOrder, setMyOrder] = useState([]);
   useEffect(() => {
-    const uri = `http://localhost:1000/mybooking/${user?.email}`;
+    const uri = `https://glacial-retreat-12345.herokuapp.com/mybooking/${user?.email}`;
     fetch(uri)
       .then((res) => res.json())
       .then((data) => setMyOrder(data));
@@ -16,7 +16,7 @@ const Myorder = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("are you sure, you want to delete!!!");
     if (proceed) {
-      fetch(`http://localhost:1000/mybooking/${id}`, {
+      fetch(`https://glacial-retreat-12345.herokuapp.com/mybooking/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
