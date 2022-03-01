@@ -28,11 +28,22 @@ const Home = () => {
       <h1 className="wellcome">
         WELLCOME TO THE <br /> MIDTOWN HOTEL
       </h1>
-      <img
-        className="img-fluid"
-        src="https://image-tc.galaxy.tf/wijpeg-a1b96lgvp6vvmankkwbnhbqjw/file.jpg?width=1920"
-        alt=""
-      />
+      <video className='video' loop autoPlay muted>
+
+        <source src="https://file.videopolis.com/F/1/91c2c296-0acb-4ce6-a2c7-f8482e765a65/101733.13266.new-york.the-watermark-hotel-nyc.hero-zY65lcpO-63017-720p-lb.mp4" />
+      </video>
+
+
+
+      <div>
+        <h2 className="rooms-featured">Featured Rooms</h2>
+        <div className="home-container">
+          {home.map((room) => (
+            <UseHome key={room._id} room={room}></UseHome>
+          ))}
+        </div>
+      </div>
+
       {/* fill comfort area */}
       <div className="fill-comfort">
         <h1 className="comfort">Excitement Meets Comfort and Luxury</h1>
@@ -76,38 +87,9 @@ const Home = () => {
       </div>
       {/* fill comport area */}
 
-      <div>
-        <h2 className="rooms-featured">Featured Rooms</h2>
-        <div className="home-container">
-          {home.map((room) => (
-            <UseHome key={room._id} room={room}></UseHome>
-          ))}
-        </div>
-      </div>
-      {/* park and daining area */}
-      <div className="dinner-div">
-        <div className="row">
-          <h1 className="midtown">Enjoy your drink</h1>
-          <div className="col-lg-3">
-            <div className="facilities"></div>
-          </div>
-        </div>
-      </div>
-      <div className="facilities-div">
-        <div className="row">
-          <h1 className="midtown">WELLCOME TO THE MIDTOWN HOTEL PARK</h1>
-          <div className="col-lg-3">
-            <div className="facilities">
-              <h2 className="warning">
-                enter inside by this road and enjoy scenery of this park{" "}
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* park and daining area  end*/}
 
-      <div className="row">
+
+      <div className="row p-4 m-4">
         <div className="col-md-6">
           <h4 className="p-4">SUPERIOR SUITE</h4>
           <p>
@@ -132,24 +114,6 @@ const Home = () => {
           />{" "}
         </div>
       </div>
-
-      {/*  <div className="row">
-        <div className="col-lg-6">
-          <img
-            src="https://image-tc.galaxy.tf/wijpeg-b300k0q1i6e1ztamnz33ozruh/file.jpg?width=1920"
-            alt=""
-          />
-        </div>
-        <div className="col-lg-6">
-          <h1>FOOD AND DRINK</h1>
-          <p>(Comming Soon)</p>
-          <p>
-            The Henn na Hotel New York will feature a full-service restaurant
-            providing high-quality all-day dining. Acclaimed, authentic, and
-            savory cuisine experience coming soon!
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 };

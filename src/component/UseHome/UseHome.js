@@ -12,9 +12,11 @@ const UseHome = (props) => {
         <h5> {price} </h5>
         <h5>{name}</h5>
         <p>{description}</p>
-        <Link to={`/placebook/${_id}`}>
-          <button className="book-now">BOOK NOW</button>
-        </Link>
+        <div>
+          <Link to={`/placebook/${_id}`}>
+            <button className="book-now">BOOK NOW</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

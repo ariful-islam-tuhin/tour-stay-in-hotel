@@ -11,10 +11,13 @@
   text-align: center;
   position: absolute;
 }
+h4{
+  color: #39e9fe;
+}
 .image {
   width: 90%;
   height: 420px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   position: relative;
 }
 .facilities {
@@ -30,7 +33,8 @@
   padding: 30px;
 }
 .fill-comfort-para {
-  font-size: 20px;
+  font-size: 15px;
+  color:rgb(160, 159, 159);
 }
 @media only screen and (max-width: 668px) {
   .home-container {
@@ -51,25 +55,43 @@
   color: #ffffff;
   padding-top: 200px;
 }
-.dinner-div {
-  background-image: url("https://image-tc.galaxy.tf/wijpeg-dinmgj7jxoeoo69lp4evfzzu/file.jpg?width=1920");
-  background-size: 100% 100%;
+.video {
+  width: 100%;
+  max-height:660px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
 }
-.facilities-div {
-  background-image: url("https://image-tc.galaxy.tf/wijpeg-34c7kepj5yugabl16dgkhbllx/file.jpg?height=300");
-  background-size: 100% 100%;
-  color: white;
+
+
+/* .dinner-div { 
+  background-size: 100% 100%; 
+  max-height:400px; 
+  max-width:400px; 
 }
-.order-list {
+.facilities-div { 
+  background-size: 100% 100%;
+  max-width:400px; 
+  max-height:400px; 
+
+} */
+.park-dining{
+  padding:20px;
+  margin:30px;
+  box-sizing: border-box;
+}
+/* .order-list li {
   text-align: left;
-  background-color: red;
-}
+  color:red;
+  
+ 
+} */
 .image-daining {
   width: 100%;
-  height: 100%;
+  max-height: 300%;
 }
 .rooms-featured {
-  padding: 100px;
-  font-size: 70px;
+  padding: 30px;
+  font-size: 40px;
   font-weight: 300;
 }

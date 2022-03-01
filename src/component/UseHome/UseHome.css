@@ -1,8 +1,21 @@
 .room-div {
-  height: 650px;
+  height: 650px; 
+  margin-top: 30px;
+  border:2px solid rgba(211, 211, 211, 0.705);
 }
 .book-now {
   background-color: #7a7a7a;
   color: white;
-  padding: 10px 50px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  
+}
+.book-now:hover {
+  background-color: #a8a7a7;
+  color: rgb(0, 0, 0);
+ 
+}
+.image{
+  max-height: 350px;
 }
