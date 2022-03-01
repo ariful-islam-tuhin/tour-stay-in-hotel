@@ -5,9 +5,10 @@
 }
 .wellcome {
   color: #39e9fe;
-  font-size: 60px;
+  font-size: 3rem;
   margin-top: 200px;
   margin: 0 auto;
+  text-align: center;
   position: absolute;
 }
 .image {
