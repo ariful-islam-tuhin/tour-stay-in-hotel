@@ -19,7 +19,7 @@ const AddService = () => {
   };
 
   return (
-    <div className="add-service">
+    <div className="add-service ">
       <h2> please Add a Service</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register("name")} placeholder="Name" />

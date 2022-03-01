@@ -87,7 +87,28 @@ const Home = () => {
       </div>
       {/* fill comport area */}
 
+      {/* =========== */}
 
+      <div className="row p-4 m-4">
+    
+        <div className="col-md-6">
+          {" "}
+          <img
+            className="img-fluid"
+            src="https://image-tc.galaxy.tf/wijpeg-b300k0q1i6e1ztamnz33ozruh/file.jpg?width=1920"
+            alt=""
+          />{" "}
+        </div>
+        <div className="col-md-6">
+          <h4 className="p-4">Food and Drink</h4>
+          <p>
+            (coming soon)
+
+            The Henn na Hotel New York will feature a full-service restaurant providing high-quality all-day dining.  Acclaimed, authentic, and savory cuisine experience coming soon!
+          </p>
+        </div>
+      </div>
+      {/* ============= */}
 
       <div className="row p-4 m-4">
         <div className="col-md-6">

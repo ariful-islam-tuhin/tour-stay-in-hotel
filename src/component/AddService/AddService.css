@@ -11,3 +11,11 @@
   border-color: lightblue;
   font-weight: bold;
 }
+.add-service{
+  margin-top: 20px;
+  padding:20px;
+  background-image:url('https://media.istockphoto.com/photos/yoga-room-with-big-light-window-in-modern-flat-yoga-mat-on-the-floor-picture-id1244544714?k=20&m=1244544714&s=612x612&w=0&h=6dOo3DmjXBTIhYiuBrxr05ZKxsLhOJRna9AQSIkeuSQ=');
+ background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}

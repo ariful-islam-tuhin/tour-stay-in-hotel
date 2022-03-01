@@ -1,8 +1,27 @@
 .room-div {
   height: 650px; 
   margin-top: 30px;
-  border:2px solid rgba(211, 211, 211, 0.705);
+  border:.5px solid rgba(211, 211, 211, 0.336);
 }
+.image:hover {
+  transform: scale(1) skew(-15deg);
+  transition:transform 2s ease-in-out;
+}
+.image:not(:hover) {
+  transform: scale(.8) skew(15deg);
+  transition:transform 2s ease-in-out;
+  
+}
+.room-desc:hover {
+  transform: scale(1) skew(-15deg);
+  transition:transform 2s ease-in-out;
+}
+.room-desc:not(:hover) {
+  transform: scale(.8) skew(15deg);
+  transition:transform 2s ease-in-out;
+  
+}
+
 .book-now {
   background-color: #7a7a7a;
   color: white;

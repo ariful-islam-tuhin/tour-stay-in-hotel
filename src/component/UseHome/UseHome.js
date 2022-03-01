@@ -9,10 +9,10 @@ const UseHome = (props) => {
     <div className="container">
       <div className="room-div">
         <img className="image" src={img} alt="" />
-        <h5> {price} </h5>
-        <h5>{name}</h5>
-        <p>{description}</p>
-        <div>
+        <div className="room-desc">
+          <h5> {price} </h5>
+          <h5>{name}</h5>
+          <p>{description}</p>
           <Link to={`/placebook/${_id}`}>
             <button className="book-now">BOOK NOW</button>
           </Link>

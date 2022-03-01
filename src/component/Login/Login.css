@@ -3,11 +3,23 @@
   justify-content: center;
   background-color: rgb(255, 255, 255);
   padding: 200px 20px;
+  background-image: url('https://images5.alphacoders.com/349/349822.jpg');
+  background-size: 100% 100%; 
+  width: 30%;
+  height: 30%;
+  margin:0 auto;
 }
 .g-button {
   width: 200px;
   height: 50px;
-  background-color: lightgreen;
+  background-color: lightseagreen;
   border-radius: 5px;
   border-color: lightseagreen;
+  
+}
+.login-form:hover {
+ color:white;
+}
+.g-button:hover {
+ color:green;
 }

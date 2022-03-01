@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router";
 import useAuth from "../../hooks/useAuth";
+import { FaGoogle} from 'react-icons/fa';
 import "./Login.css";
 
 const Login = () => {
@@ -20,12 +21,12 @@ const Login = () => {
       .finally(() => setIsLoading(false));
   };
   return (
-    <div className="container">
+    <div className="">
       <div className="login-form">
         <div className="login-div">
-          <h3>Login Please</h3>
+          <h3>please log in with your (Google account) </h3>
           <button className="g-button" onClick={handleGoogleSignIn}>
-            Google Sign In
+          <FaGoogle style={{ color: 'green', fontSize: '30px' }} /> Google Sign In
           </button>
         </div>
       </div>
